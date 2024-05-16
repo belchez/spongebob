@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link 1</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            position: relative;
+        }
+        .background-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1; /* Ensure the background is behind other content */
+            filter: blur(5px); /* Apply blur effect to the background */
+            background-image: url('C:/Users/JOHN PAUL BELCHEZ/Documents/background.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: flex-start; /* Align items at the start */
+        }
+        .picture-container {
+            margin: 20px 10px; /* Adjust margin to move down the picture container */
+            text-align: center; /* Center align the text */
+            cursor: pointer;
+            border-radius: 20px; /* Add rounded corners */
+            overflow: hidden; /* Hide overflow content to ensure rounded corners are applied */
+        }
+        .picture {
+            width: 300px;
+            height: 300px;
+        }
+        .name {
+            margin-top: 5px; /* Add some space between picture and name */
+            text-transform: uppercase; /* Capitalize the name */
+        }
+        .back-arrow {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            font-size: 50px; /* Increase arrow size */
+            color: black; /* Set arrow color to black */
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="background-container"></div>
+    <div class="container">
+        <div class="picture-container">
+            <a href="patrick.html">
+                <img src="C:\Users\JOHN PAUL BELCHEZ\Desktop\website\Ptrick.jpg" alt="Patrick" class="picture">
+            </a>
+            <div class="name">PATRICK</div>
+        </div>
+        <div class="picture-container">
+            <a href="file:///C:/Users/JOHN%20PAUL%20BELCHEZ/Desktop/website/spongebob-info.html">
+                <img src="C:\Users\JOHN PAUL BELCHEZ\Desktop\website\spongebobpic.jpg" alt="SpongeBob" class="picture">
+            </a>
+            <div class="name">SPONGEBOB</div>
+        </div>
+        <div class="picture-container">
+            <a href="squidward.html">
+                <img src="C:\Users\JOHN PAUL BELCHEZ\Desktop\website\squidward.jpg" alt="Squidward" class="picture">
+            </a>
+            <div class="name">SQUIDWARD</div>
+        </div>
+        <div class="picture-container">
+            <a href="mr-crab.html">
+                <img src="C:\Users\JOHN PAUL BELCHEZ\Desktop\website\crb.jpg" alt="Mr. Crab" class="picture">
+            </a>
+            <div class="name">MR. CRAB</div>
+        </div>
+        <div class="picture-container">
+            <a href="plankton.html">
+                <img src="C:\Users\JOHN PAUL BELCHEZ\Desktop\website\plankton.jpg" alt="Plankton" class="picture">
+            </a>
+            <div class="name">PLANKTON</div>
+        </div>
+    </div>
+    <a href="file:///C:/Users/JOHN%20PAUL%20BELCHEZ/Desktop/website/spongebob.html" class="back-arrow">&#8592;</a>
+</body>
+</html>

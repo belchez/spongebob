@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Infansia", sans-serif;
+            background-image: url('C:/Users/JOHN PAUL BELCHEZ/Documents/background.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            height: 100vh;
+            position: relative;
+        }
+        .container {
+            margin-top: 50px; /* Adjust top margin to move the search bar closer to the top */
+            text-align: center;
+            position: relative; /* Needed for positioning search bar relative to the container */
+        }
+        #search-bar {
+            padding: 10px;
+            width: 400px;
+            border-radius: 20px;
+            border: none;
+            outline: none;
+            text-align: center;
+            font-size: 20px;
+            background-color: rgba(255, 255, 255, 0.5);
+            color: #333;
+            margin-top: 20px; /* Adjust downward margin */
+        }
+        #search-icon {
+            position: absolute;
+            top: 50%;
+            right: 10px;
+            transform: translateY(-50%);
+            color: #333;
+            cursor: pointer;
+        }
+        #bottom-text {
+            font-family: "Water", sans-serif;
+            font-size: 60px; /* Adjust the text size to 60px */
+            font-weight: bold; /* Make the text bold */
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5); /* Apply text shadow for water-like effect */
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        #bottom-text p {
+            margin: 0;
+        }
+        #bottom-text a {
+            color: inherit; /* Make links inherit the text color */
+            text-decoration: none; /* Remove underline from links */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <input type="text" id="search-bar" placeholder="Search...">
+        <i id="search-icon" class="fas fa-search"></i>
+    </div>
+    <div id="bottom-text">
+        <a href="file:///C:/Users/JOHN%20PAUL%20BELCHEZ/Desktop/website/picture%20of%20%20names.html">Amicoc Del</a>
+        <a href="file:///C:/Users/JOHN%20PAUL%20BELCHEZ/Desktop/website/picture%20of%20%20names.html">Infancia</a>
+    </div>
+
+    <script>
+        // Function to handle search
+        function handleSearch() {
+            var searchTerm = document.getElementById("search-bar").value.toLowerCase();
+            if (searchTerm === "spongebob") {
+                window.location.href = "file:///C:/Users/JOHN%20PAUL%20BELCHEZ/Desktop/website/spongebob-info.html";
+            }
+        }
+
+        // Event listener for search icon click
+        document.getElementById("search-icon").addEventListener("click", handleSearch);
+
+        // Event listener for Enter key press in search bar
+        document.getElementById("search-bar").addEventListener("keypress", function (e) {
+            if (e.key === "Enter") {
+                handleSearch();
+            }
+        });
+    </script>
+</body>
+</html>
